@@ -1,0 +1,666 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <title>Ali Bayati</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            background-color: black;
+            width: 1182px;
+            height: 995px;
+        }
+
+        #container {
+            background: url('entrance.jpg');
+            background-position: -289px 0px;
+            width: 1300px;
+            height: 995px;
+        }
+
+        #sharinghan {
+
+            top: 372px;
+            height: 600px;
+            width: 600px;
+            left: 322px;
+            position: relative;
+            display: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+
+        #sharinghanImg {
+            width: 100%;
+            height: auto;
+            animation: shake 0.5s;
+
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(10px, 10px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-10px, -10px) rotate(1deg);
+            }
+            90% {
+                transform: translate(30px, 20px) rotate(0deg);
+            }
+            100% {
+                transform: translate(30px, -20px) rotate(-1deg);
+            }
+        }
+
+        #fire1 {
+            height: 147px;
+            width: 182px;
+            position: relative;
+            right: 287px;
+            top: 541px;
+
+
+        }
+
+        #fire2 {
+            height: 147px;
+            width: 182px;
+            position: relative;
+            left: -134px;
+            top: 537px;
+        }
+
+        #ninShadow {
+            position: relative;
+            width: 347px;
+
+            top: 580px;
+            right: 400px;
+
+        }
+
+        #ninSecond {
+            position: relative;
+            width: 300px;
+            bottom: 310px;
+
+            display: inline-block;
+        }
+
+
+        #gate {
+            height: auto;
+            width: 1434px;
+            position: relative;
+            bottom: 329px;
+            right: 225px;
+        }
+
+
+        #cave2 {
+
+            width: inherit;
+            height: 904px;
+
+        }
+
+        .shar {
+            border: 2px white solid;
+            border-radius: 192px;
+            position: fixed;
+            width: 90px;
+            transition: width 3s, height 3s, transform 1s;
+
+
+
+        }
+
+        .shar:hover {
+            transform: rotate(180deg);
+
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #s1 {
+            left: 104px;
+            bottom: 70px;
+            animation: fadein 2s;
+        }
+
+
+
+        #s2 {
+            left: 104px;
+            bottom: 190px;
+            animation: fadein 2s;
+
+        }
+
+        #s7 {
+            left: 104px;
+            bottom: 430px;
+            height: 88px;
+            animation: fadein 2s;
+
+        }
+
+        #s3 {
+            left: 104px;
+            bottom: 550px;
+            animation: fadein 2s;
+        }
+
+
+
+        #s4 {
+            left: 104px;
+            bottom: 310px;
+            animation: fadein 2s;
+
+        }
+
+        #s6 {
+            left: 104px;
+            bottom: 670px;
+            animation: fadein 2s;
+
+        }
+
+        #s5 {
+            left: 104px;
+            bottom: 790px;
+            animation: fadein 2s;
+        }
+
+
+        #textCont {
+            left: 30%;
+            top: 10%;
+            height: 300px;
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.47);
+            color: #f1f1f1;
+            width: 60%;
+            border-radius: 50px;
+            animation: fadein 2s;
+
+        }
+
+        #subText {
+
+            background: rgba(0, 0, 0, 0.47);
+            color: #f1f1f1;
+            border-radius: 16px;
+            animation: fadein 2s;
+            left: 210px;
+            width: auto;
+            position: absolute;
+            animation: fadein 2s;
+
+
+        }
+
+        #head {
+            text-align: center;
+        }
+
+        #text {
+
+            padding-left: 44px;
+
+        }
+
+        #profPic {
+            width: 160px;
+            position: fixed;
+            left: 830px;
+            top: 602px;
+            border-radius: 30px;
+
+        }
+
+        #textDisplay {
+            position: absolute;
+            top: 414px;
+            left: 428px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        #footer {
+            background-color: #26445b8f;
+            width: 110%;
+            text-align: center;
+            color: white;
+            height: auto;
+            margin: 0px;
+
+        }
+
+        #unmute {
+            position: fixed;
+            left: 1090px;
+            padding: 5px;
+            color: white;
+            background-color: #26445b8f;
+            margin: 10;
+            
+        }
+    </style>
+
+
+</head>
+
+<body id="body">
+    <div id="insideCave" hidden>
+
+    </div>
+    <div id="container">
+        <p id="unmute" >tap anywhere to unmute!</p>
+        <h2 id="textDisplay"></h2>
+
+        <div id="sharinghan" class="w3-circle w3-animate-zoom ">
+            <img id="sharinghanImg" src="s.gif" alt="sharinghan">
+        </div>
+        <div id="decor">
+
+            <img id="ninShadow" src="ninShadow.png">
+            <img id="ninSecond" src="jitsuNinja.png">
+            <img id="fire1" src="fire.gif" alt="fire">
+            <img id="fire2" src="fire.gif" alt="fire">
+        </div>
+        <img id="cave2" src="cave2.jpg" alt="insideCave" hidden>
+        <img id="smoke" src="Graysmoke.gif" alt="Graysmoke" hidden>
+
+
+        <div id="textCont" hidden>
+            <h1 id="head"></h1>
+            <p id="text"></p>
+            <img id="profPic" src="AliProfile.jpg" alt="profPic" hidden>
+        </div>
+        <div id="subText" hidden></div>
+        <img id="s1" class="shar" src="sharinghan/s1.png" alt="s1" hidden>
+        <img id="s2" class="shar" src="sharinghan/s2.png" alt="s2" hidden>
+        <img id="s3" class="shar" src="sharinghan/s3.png" alt="s3" hidden>
+        <img id="s4" class="shar" src="sharinghan/s4.png" alt="s4" hidden>
+        <img id="s5" class="shar" src="sharinghan/s5.png" alt="s5" hidden>
+        <img id="s6" class="shar" src="sharinghan/s6.png" alt="s6" hidden>
+        <img id="s7" class="shar" src="sharinghan/cd_logo_blue_png.png" alt="s7" hidden>
+
+    </div>
+    <script>
+
+        var background1 = new Audio("sounds/firstPageBsound.mp3");
+        var background2 = new Audio("sounds/secBsound.mp3");
+        var ninjaMoves = new Audio("sounds/ninjasMoves.mp3");
+        var sharActitd = new Audio("sounds/sharinghanActivatedAMP.mp3");
+        var hoverOverShar = new Audio("sounds/hoverOverSharinghan.mp3");
+        var sharsAppear = new Audio("sounds/sharinghanAppearsAMP.mp3");
+        var clickOnShar = new Audio("sounds/clickedOnShar.mp3")
+
+
+        body.onload = function () {
+
+
+            window.scrollY = 0;
+            i = 0;
+            pageScroll();
+
+        }
+
+
+        container.onclick = function () {
+
+            clicked();
+        }
+
+
+        function clicked() {
+            background1.play();
+            unmute.style.display = "none";
+        }
+
+        function typingSound() {
+
+            console.log("playing music");
+            var audio = new Audio('sounds/typingDigital.mp3');
+            audio.play()
+        }
+
+        function pageScroll() {
+
+            i++;
+            if (i < 350) {
+
+                window.scrollBy(0, 1);
+                scrolldelay = setTimeout(pageScroll, 20);
+            }
+            else if (i == 400) {
+                typingSound();
+                typeWriter();
+                pageScroll();
+            }
+            else if (i == 650) {
+                document.getElementById("textDisplay").innerHTML = "";
+                ninjasAction();
+            }
+            else {
+                scrolldelay = setTimeout(pageScroll, 30);
+            }
+
+
+
+        }
+        var j = 0;
+        var txt = "Welcome To My Protfolio Site! ...";
+        function typeWriter() {
+
+            if (j < txt.length && j < txt.length - 4) {
+                console.log(j)
+                document.getElementById("textDisplay").innerHTML += txt.charAt(j);
+                j++;
+                setTimeout(typeWriter, 100);
+            }
+            else if (j > txt.length - 4 || j < txt.length) {
+
+                console.log(j)
+                document.getElementById("textDisplay").innerHTML += txt.charAt(j);
+
+                j++;
+                setTimeout(typeWriter, 1000);
+                if (j > txt.length) {
+                    return null;
+                }
+            }
+            return null;
+        }
+
+
+        function ninjasAction() {
+            ninjaMoves.play();
+
+            let start = Date.now();
+
+            let timer = setInterval(function () {
+                let timePassed = Date.now() - start;
+
+                ninShadow.style.left = timePassed / 0.1 + 'px';
+
+                if (timePassed > 200) clearInterval(timer);
+                secondNin();
+
+                setTimeout(function () {
+                    displayEye();
+                }, 1000)
+
+            }, 1);
+
+        }
+
+
+        function secondNin() {
+
+            let start = Date.now();
+
+            let timer = setInterval(function () {
+                let timePassed = Date.now() - start;
+
+
+                ninSecond.style.right = timePassed / 0.1 - 750 + 'px';
+                ninSecond.style.top = timePassed / 0.1 + 'px';
+
+                if (timePassed > 60) clearInterval(timer);
+
+            }, 1);
+
+
+        }
+        function displayEye() {
+            decor.style.display = "none";
+            sharinghan.style.display = "inline-block";
+
+            setTimeout(function () {
+
+                sharinghan.style.animation = "infinite";
+                container.style.filter = "invert(100%)";
+                sharActitd.play();
+
+                sharinghanActivated()// this line stops the transforming to the second page
+            }, 1000)
+        }
+        function sharinghanActivated() {
+            console.log("transforming");
+
+            body.style.transform = "rotateY(90deg)";
+            body.style.transition = "2s";// flipping first page
+            setTimeout(function () {
+                window.scrollBy(0, -10);
+
+                unmute.style.display = "none";
+                background1.pause();
+                background1 = "";
+                background2.play();
+                displayInsideCave()
+            }, 2000)
+
+        }
+
+        function displayInsideCave() {
+            sharinghan.style.display = "none";
+            container.style.background = "black";
+            container.style.height = "auto";
+            container.style.filter = "none";
+            cave2.style.display = "inline";
+            smoke.style.display = "inline";
+            smoke.style.filter = "grayscale(100%)";
+            smoke.style.position = "fixed";
+            smoke.style.bottom = "100px";
+            smoke.style.opacity = "0.3";
+            smoke.style.width = "-webkit-fill-available";
+
+
+            body.style.height = "auto";
+
+            body.style.transform = "rotateY(0deg)";
+            body.style.transition = "2s";// reveal second page
+
+
+            setTimeout(function () {
+                sharsAppear.play();
+                displaySharEyes();
+            }, 3000)
+
+        }
+
+        function displaySharEyes() {
+
+
+            s1.style.display = "inline";
+            s2.style.display = "inline";
+            s3.style.display = "inline";
+            s4.style.display = "inline";
+            s5.style.display = "inline";
+            s6.style.display = "inline";
+            s7.style.display = "inline";
+
+
+
+        }
+
+
+
+
+        $(".shar").hover(function () {
+
+            $("#subText").fadeIn();
+            hoverOverShar.play();
+
+            if ($(this).attr("id") == "s5") {
+                $("#subText").text("Summary");
+                $("#subText").css({ top: "58px" });
+            }
+
+            else if ($(this).attr("id") == "s6") {
+                $("#subText").text("Technichal Skills");
+                $("#subText").css({ top: "178px" });
+            }
+
+            else if ($(this).attr("id") == "s3") {
+                $("#subText").text("Set-Goals");
+                $("#subText").css({ top: "298px" });
+            }
+
+            else if ($(this).attr("id") == "s7") {
+                $("#subText").text("Coding Dojo");
+                $("#subText").css({ top: "418px" });
+
+            }
+
+            else if ($(this).attr("id") == "s4") {
+                $("#subText").text("Education and Acheivements");
+                $("#subText").css({ top: "538px" });
+
+
+
+            }
+
+            else if ($(this).attr("id") == "s2") {
+                $("#subText").text("Projects");
+                $("#subText").css({ top: "658px" });
+            }
+
+            else if ($(this).attr("id") == "s1") {
+                $("#subText").text("Contact Me");
+                $("#subText").css({ top: "778px" });
+
+            }
+        })
+
+
+        $(".shar").mouseleave(function () {
+            $("#subText").text("");
+            hoverOverShar.pause();
+
+        })
+
+
+        $(".shar").click(function () {
+            clickOnShar.play();
+
+            $("#textCont").fadeIn();
+
+            if (
+                $(this).attr("id") == "s5") {
+                $("#textCont").css({ top: "30px" });
+                $("#head").text("Summary");
+                $("#text").text("Talented Motivated junior Full­stack Developer, Just completed one of the best and hardest Coding Boot camps in the States (Coding Dojo) professional .NET C#,Python, JavaScript M.E.A.N, Also Java Developer ­2017 and C++ Professional Programmer 2016 certified by ( C.O.D College Of Dupage ), Engineered Designed Debugged and Deployed handful of projects for Coding­Dojo Chicago, With experience equivalent to 2 years of experience,Looking to contribute to a dedicated team of developers.")
+                $("#profPic").css({ display: "none" });
+            }
+
+            else if ($(this).attr("id") == "s6") {
+                $("#textCont").css({ top: "140px" });
+                $("#head").text("Technical Skills");
+                $("#text").html("­-.NET C#: ASP.NET, Microsoft Entity Framework, Models, .NET Core, Ajax, ORM’s, Controllers,Routing, AWS and Azure.­<br>-Python: Django, Flask, Pip, ORM , Routing, Urls, Views, Templates, OOP, Python Shell,Polymorphism, HTTP Requests, Forms, Session.­<br>-JavaScript: MongoDB, Express, Angular, Node.js,  Socket.io, JOSN, ES5, ES6, EJS, AJAX.­ <br>-JQuery: Events listener, Effects, Data Manipulation HTML.­ <br>-Other Programming Languages: Java, C++.<br>-MySQL,  Sqlite, SQL, NoSQL: CRUD Applications, ERD, DB­Relations, MySQL server.­ <br>-GitHub: Push, Branch Pull, Pull Requests, Merge.");
+                $("#profPic").css({ display: "none" });
+            }
+
+            else if ($(this).attr("id") == "s3") {
+                $("#textCont").css({ top: "250px" });
+                $("#head").text("Set-Goals");
+                $("#text").html("Short Term Goals:<br>-Junior Full stack Developer. <br>-Senior Developer(In the next two years).<br>Long Trem Goals:<br>-Game Developer.<br>-C.T.O in a Game Developing Company.<br>-Open My Own Coding Academy.")
+                $("#profPic").css({ display: "none" });
+            }
+
+            else if ($(this).attr("id") == "s7") {
+                $("#textCont").css({ top: "380px" });
+                $("#head").text("Coding Dojo");
+                $("#text").html("Coding Dojo has a proven reputation for transforming students with little to no engineering background into successful, full-stack developers. Our mission at Coding Dojo is to transform lives through programming literacy, and with this in mind, we found an amazing opportunity to provide an educational resource for new learners who just need help getting started, and to experienced developers striving to achieve the next step in their career. The game of life is tough, level up with Coding Dojo.<br><br><a href='https://www.codingdojo.com/'>Coding Dojo</a>")
+                $("#profPic").css({ display: "none" });
+            }
+
+            else if ($(this).attr("id") == "s4") {
+                $("#textCont").css({ top: '500px' });
+                $("#head").text("Education and Acheivements");
+                $("#text").html("-Full Stack Developer (Python, M.E.A.N, .NET C#) / (Black Belts Rank) Coding ­Dojo.  <br>-Associate Degree In Computer Science Software Engineering / University of Al­Ma’mun. <br>-JAVA Language Proficiency certificate / College Of Dupage. <br>-C++ Programming Certificate / College Of Dupage.")
+                $("#profPic").css({ display: "none" });
+            }
+
+            else if ($(this).attr("id") == "s2") {
+                $("#textCont").css({ top: "422px" });
+                $("#head").text("Projects");
+                $("#text").html("<a href='http://ec2-18-222-129-39.us-east-2.compute.amazonaws.com/'>Cryptobase</a><br><a href='https://chat--alialwahish.repl.co/'>Group Chat<a/><br><a href='https://github.com/alialwahish/domino_new'>Multiplayer Domino Game</a><br><a href='https://github.com/alialwahish/atAppointment'>atAppointments</a><br>Protfolio Site Engineering Tools:<br>HTML,JavaScript and CSS.<br>Works Sited:<br><a href='https://www.artstation.com/artwork/EAoxq'>Art: 'cave' Jared Giglio</a> <br>Anime and Sounds: TV Tokyo and Bandai Co Ltd.(Naruto OSTs)")
+                $("#profPic").css({ display: "none" });
+
+
+            }
+
+            else if ($(this).attr("id") == "s1") {
+                $("#textCont").css({ top: "526px" });
+                $("#head").text("Contact Me");
+                $("#text").html("<br><br><a href='https://www.linkedin.com/in/ali-bayati-ba9518134'>LinkedIn</a><br><a href='mailto:ali.sb.bayati@gmail.com'>Email</a><br>C:773.280.4105")
+                $("#profPic").css({ display: "inline" });
+
+            }
+
+
+
+        });
+        $("#cave2 , #smoke").click(function () {
+            background2.play();
+
+            $("#textCont").fadeOut();
+
+
+
+        });
+
+        background2.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        background2.play();
+
+    </script>
+
+    <footer id="footer">
+
+        <p style="margin:0px;">Copyright &#169 2018 Coding Dojo. All rights reserved .</p>
+
+    </footer>
+</body>
+
+</html>
